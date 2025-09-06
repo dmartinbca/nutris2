@@ -1,0 +1,347 @@
+@import url('/src/assets/fonts.css');
+@import url('/src/assets/css/responsedesktop.css');
+@import url('/src/assets/css/responsivemobile.css');
+:root {
+  --font-primary: 'Museo', sans-serif;
+  --font-MuseoSemiBold : 'MuseoSemiBold', sans-serif;
+  --font-MulishBold: 'MulishBold', sans-serif;
+  --font-MulishLight: 'MulishLight', sans-serif;
+  --font-RalewayBold: 'RalewayBold', sans-serif;
+  --font-RalewayLight: 'RalewayLight', sans-serif;
+  --font-RalewayRegular: 'RalewayRegular', sans-serif;
+  --font-RalewaySemiBold: 'RalewaySemiBold', sans-serif;
+  --font-RalewayExtraBold: 'RalewayExtraBold', sans-serif;
+  --font-RalewayMedium: 'RalewayMedium', sans-serif;
+  --menu: #DEE6F3;
+  --stripes: #C0CBDD;
+  --buttonArrow: #92A9D2;
+  --textButton: #2F5496;
+  --blackBlue: #001843;
+  --sectionSuperior: #F9F9FA;
+  --spaceWrite : #F2F2F2;
+  --icon: #C4C4C4;
+  --textNotFeatured : #999A9B;
+  --comment :#434445;
+  --textNavPag: #F0F7FE;
+  --base-viewport: 1920;
+  --min-viewport: 768;
+  --font-scale: 1; /* Factor de escala inicial */
+}
+
+body {
+  max-width: 100vw;
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-primary);
+}
+
+#app {
+  width: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+  font-weight: 300;
+  font-family: var(--font-primary);
+  /* overflow-x: hidden; */
+}
+/****App mobile*****/
+@media only screen and (max-width: 1200px) {
+  /* #app {
+    width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: "a";
+    grid-template-columns:auto;
+    font-weight: 300;
+    font-family: var(--font-primary);
+    margin: auto;
+    padding: 0;
+    overflow-x: hidden;
+  } */
+
+  #menu{
+    /* display: none; */
+  }
+  /* .main-content{
+    padding: 0 !important;
+  } */
+  .header-order {
+    display: block !important;
+}
+}
+
+.main-content{
+  /* grid-column: 2;
+  width: 100%; */
+  /* max-width: 1728px; */
+  padding: 3.96rem;
+  margin: 40px auto;
+}
+
+.modal-backdrop.show {
+  display: none !important ;
+}
+
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.MulishBold {
+  font-family:  var(--font-MulishBold);
+  font-weight: 700;
+}
+
+.MulishLight{
+  font-family:  var(--font-MulishLight);
+  font-weight: 300;
+}
+
+.RalewayBold {
+  font-family: var(--font-RalewayBold) !important;
+  font-weight: 700 !important;
+}
+
+.RalewayExtraBold {
+  font-family: var(--font-RalewayExtraBold) !important;
+  font-weight: 900 !important;
+}
+
+.RalewayLight {
+  font-family:  var(--font-RalewayLight) !important;
+  font-weight: 300 !important;
+}
+
+.RalewayRegular {
+  font-family: var(--font-RalewayRegular) !important;
+  font-weight: normal !important;
+}
+
+.RalewaySemiBold {
+  font-family: var(--font-RalewaySemiBold) !important;
+  font-weight: 600 !important;
+}
+
+.RalewayMedium {
+  font-family: var(--font-RalewayMedium) !important;
+  font-weight: 500 !important;
+}
+
+.MuseoSemiBold{
+  font-family: var(--font-MuseoSemiBold) !important;
+  font-weight: 600 !important;
+}
+
+.Museo {
+  font-family: var(--font-primary);
+  font-weight: 300 !important;
+}
+
+
+.redDate {
+  color:  #D91515 !important;
+}
+
+.w-79 {
+  width: 4.938rem;
+}
+
+.w-200 {
+  width: 12.5rem;
+}
+
+.h-79 {
+  height: 4.938rem;
+}
+
+.fontWeight300 {
+  font-weight: 300 !important ;
+}
+
+.width384 {
+  width: 21.75rem;
+}
+
+.width664 {
+  width: 41.5rem;
+}
+
+.width80 {
+  width: 5rem;
+}
+
+.width855 {
+  width: 53.438rem !important;
+}
+
+.height571 {
+  height: 36.688rem !important;
+}
+
+.a {
+  text-decoration: none;
+  color: black;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.text-decoretion-none { 
+  text-decoration: none;
+}
+
+
+
+/* .font-10  { font-size: clamp(0.5rem, calc(0.625rem * var(--font-scale)), 0.75rem) !important; }
+.font-12  { font-size: clamp(0.6rem, calc(0.75rem * var(--font-scale)), 0.9rem) !important; }
+.font-14  { font-size: clamp(0.7rem, calc(0.875rem * var(--font-scale)), 1rem) !important; } */
+.font-10 {
+  font-size: 0.625rem !important;
+}
+
+.font-12 {
+  font-size: 0.75rem !important;
+}
+
+.font-13 {
+  font-size: 0.813rem !important
+}
+
+.font-14 {
+  font-size: 0.875rem !important;
+}
+
+.font-16 {
+  font-size: 1rem !important;
+}
+
+.font-18 {
+  font-size: 1.125rem !important;
+}
+
+.font-20 {
+  font-size: 1.25rem !important;
+}
+
+.font-19{
+  font-size: 1.188rem !important;
+}
+
+.font-21-23 {
+  font-size: 1.327rem !important;
+}
+.font-24 {
+  font-size: 1.5rem !important;
+}
+
+.font-28 {
+  font-size: 1.75rem !important;
+}
+
+.font-32 {
+  font-size: 2rem !important;
+}
+
+.font-82 {
+  font-size: 5.125rem !important;
+}
+
+
+/* Media query para pantallas entre 1920px y 1024px */
+@media (max-width: 1920px) and (min-width: 1025px) {
+  .font-10 { font-size: calc(0.625rem - ((1920px - 100vw) / 595) * 0.15) !important; }
+  .font-12 { font-size: calc(0.75rem - ((1920px - 100vw) / 595) * 0.18) !important; }
+  .font-14 { font-size: calc(0.875rem - ((1920px - 100vw) / 595) * 0.21) !important; }
+  .font-16 { font-size: calc(1rem - ((1920px - 100vw) / 595) * 0.25) !important; }
+  .font-18 { font-size: calc(1.125rem - ((1920px - 100vw) / 595) * 0.28) !important; }
+  .font-19 { font-size: calc(1.188rem - ((1920px - 100vw) / 595) * 0.29) !important; }
+  .font-20 { font-size: calc(1.25rem - ((1920px - 100vw) / 595) * 0.30) !important; }
+  .font-21-23 { font-size: calc(1.327rem - ((1920px - 100vw) / 595) * 0.32) !important; }
+  .font-24 { font-size: calc(1.5rem - ((1920px - 100vw) / 595) * 0.36) !important; }
+  .font-28 { font-size: calc(1.75rem - ((1920px - 100vw) / 595) * 0.42) !important; }
+  .font-32 { font-size: calc(2rem - ((1920px - 100vw) / 595) * 0.48) !important; }
+  .font-82 { font-size: calc(5.125rem - ((1920px - 100vw) / 595) * 1.2) !important; }
+}
+
+/* Media query para pantallas hasta 1024px */
+@media (max-width: 1024px) {
+  .font-10 { font-size: 0.475rem !important; }
+  .font-12 { font-size: 0.57rem !important; }
+  .font-14 { font-size: 0.66rem !important; }
+  .font-16 { font-size: 0.75rem !important; }
+  .font-18 { font-size: 0.85rem !important; }
+  .font-19 { font-size: 0.9rem !important; }
+  .font-20 { font-size: 0.95rem !important; }
+  .font-21-23 { font-size: 1rem !important; }
+  .font-24 { font-size: 1.15rem !important; }
+  .font-28 { font-size: 1.35rem !important; }
+  .font-32 { font-size: 1.55rem !important; }
+  .font-82 { font-size: 3.9rem !important; }
+}
+
+
+
+/* .font-16  { font-size: clamp(0.8rem, calc(1rem * var(--font-scale)), 1.2rem) !important; }
+.font-18  { font-size: clamp(0.9rem, calc(1.125rem * var(--font-scale)), 1.35rem) !important; }
+.font-19  { font-size: clamp(0.95rem, calc(1.188rem * var(--font-scale)), 1.425rem) !important; }
+.font-20  { font-size: clamp(1rem, calc(1.25rem * var(--font-scale)), 1.5rem) !important; }
+.font-21-23 { font-size: clamp(1.1rem, calc(1.327rem * var(--font-scale)), 1.6rem) !important; }
+.font-24  { font-size: clamp(1.2rem, calc(1.5rem * var(--font-scale)), 1.8rem) !important; }
+.font-28  { font-size: clamp(1.4rem, calc(1.75rem * var(--font-scale)), 2.1rem) !important; }
+.font-32  { font-size: clamp(1.6rem, calc(2rem * var(--font-scale)), 2.4rem) !important; }
+.font-82  { font-size: clamp(3.5rem, calc(5.125rem * var(--font-scale)), 6.5rem) !important; } */
+
+/* Media Query para ajustar el factor de escala */
+@media (max-width: 1920px) {
+  :root {
+    --font-scale: calc(100vw / var(--base-viewport));
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --font-scale: calc(768 / var(--base-viewport));
+  }
+}
+
+/* Opcional: Ajuste fino para pantallas muy grandes */
+@media (min-width: 1920px) {
+  :root {
+    --font-scale: 1;
+  }
+}
+
+/* Media queries para w-79 y h-79 */
+@media (max-width: 1920px) and (min-width: 1025px) {
+  .w-79 {
+    width: calc(4.938rem - ((1920px - 100vw) / 595) * 0.5) !important;
+  }
+  .h-79 {
+    height: calc(4.938rem - ((1920px - 100vw) / 595) * 0.5) !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .w-79 {
+    width: 3.5rem !important;
+  }
+  .h-79 {
+    height: 3.5rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .w-79 {
+    width: 2.5rem !important;
+  }
+  .h-79 {
+    height: 2.5rem !important;
+  }
+}

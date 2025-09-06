@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="@/assets/logonutris.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutris</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+    <script>
+     function seleccionarBoton(boton) {
+  // Remover la clase "selected" de todos los botones
+  let botones = document.querySelectorAll('.boton');
+  botones.forEach(b => b.classList.remove('selected'));
+  
+  // Agregar la clase "selected" al botón clickeado
+  boton.classList.add('selected');
+}
+
+  
+    </script>
+  </body>
+</html>
